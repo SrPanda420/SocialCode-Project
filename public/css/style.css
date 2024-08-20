@@ -33,7 +33,7 @@ header h1 {
     background-color: #ffffff23;
     backdrop-filter: blur(10px);
     border-radius: 30px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    box-shadow: 1px 1px 30px 10px rgba(130, 210, 207, 0.575);
     position: relative;
     overflow: hidden;
     width: 768px;
@@ -61,8 +61,24 @@ header h1 {
     color: #FFF;
 }
 
+.container .icon:hover {
+    background: linear-gradient(90deg,
+            rgb(139, 139, 139) 0%,
+            rgb(92, 92, 92) 68%);
+    transform: scale(1.08);
+    transition: all .5s;
+    backface-visibility: hidden;
+}
+
+.recover:hover {
+    transform: scale(1.05);
+    transition: all .5s;
+    backface-visibility: hidden;
+}
+
 .container button {
-    background-color: rgb(130, 210, 207);;
+    background-color: rgb(130, 210, 207);
+    ;
     color: #000000;
     font-size: 12px;
     padding: 10px 45px;
@@ -75,11 +91,29 @@ header h1 {
     cursor: pointer;
 }
 
+.container button:hover {
+    background: linear-gradient(90deg,
+            rgb(130, 210, 207) 0%,
+            rgb(65, 145, 142) 68%);
+    border-color: rgb(33, 193, 199);
+    transform: scale(1.08);
+    transition: all .5s;
+    backface-visibility: hidden;
+}
+
 .container button.hidden {
     background-color: transparent;
     border-color: rgb(130, 210, 207);
     color: #FFF;
 }
+
+.container button.hidden:hover {
+    background: linear-gradient(90deg,
+            rgb(130, 210, 207) 0%,
+            rgb(65, 145, 142) 68%);
+    border-color: rgb(37, 114, 111);
+}
+
 
 .container form {
     background-color: #ffffff23;
@@ -233,5 +267,3 @@ header h1 {
 .container.active .toggle-right {
     transform: translateX(200%);
 }
-
-
